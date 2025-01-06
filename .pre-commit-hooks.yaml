@@ -1,0 +1,12 @@
+- id: sqruff-lint
+  name: Run sqruff linter
+  description: This hook runs the sqruff linter
+  entry: sqruff lint
+  language: python
+  types: [sql]
+- id: sqruff-fix
+  name: Run sqruff formatter
+  description: This hook runs the sqruff formatter
+  entry: sqruff fix --force
+  language: python
+  types: [sql]
